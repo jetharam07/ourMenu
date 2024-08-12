@@ -1,0 +1,99 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.section {
+    background-color: rgb(159, 157, 157);
+    border: 1px solid black;
+    padding: 20px;
+    position: relative;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+h1{
+    text-align: center;
+}
+
+.section-title1 {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background-color: rgb(186, 104, 118);
+    padding: 5px 10px;
+    border: 1px solid black;
+    font-weight: bold;
+}
+
+.section-title2{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    color: white;
+    background-color: rgb(243, 13, 51);
+    padding: 5px 10px;
+    border: 1px solid black ;
+    font-weight: bold;
+}
+
+
+.section-title3{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    color: black;
+    background-color: yellow;
+    padding: 5px 10px;
+    border: 1px solid black ;
+    font-weight: bold;
+}
+
+/* Desktop view (992px and above) */
+@media (min-width: 992px) {
+    .section {
+        width: 30%;
+        float: left;
+        margin-right: 3.33%;
+    }
+
+    .section:nth-child(3) {
+        margin-right: 0;
+    }
+}
+
+/* Tablet view (768px to 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .section {
+        width: 48%;
+        float: left;
+        margin-right: 4%;
+        margin-bottom: 20px;
+    }
+
+    .section:nth-child(2) {
+        margin-right: 0;
+    }
+
+    .section:nth-child(3) {
+        width: 100%;
+        float: none;
+    }
+}
+
+/* Mobile view (767px and below) */
+@media (max-width: 767px) {
+    .section {
+        width: 100%;
+        float: none;
+    }
+}
